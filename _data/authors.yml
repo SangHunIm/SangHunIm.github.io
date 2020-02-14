@@ -1,8 +1,8 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 # Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
-zzsza:
-  name:              SangHun Im
+SangHunIm:
+  name:              SangHun-Im
   email:             tkrhkshdqn@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
@@ -22,7 +22,7 @@ zzsza:
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    facebook:        None
+    # facebook:        None
     # twitter:         <username>
     # google:          <number>
     # vk:              <username>
@@ -32,7 +32,7 @@ zzsza:
     # spotify:         <user>/<number>
     # soundcloud:      <username>
     # lastfm:          <username>
-    instagram:       None
+    # instagram:       None
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
@@ -51,13 +51,13 @@ zzsza:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        seong-yun-byeon-8183a8113
+    linkedin:        sang-hun-im-tkrhkshdqn
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    # email:           mailto:snugyun01@gmail.com
+    email:           mailto:tkrhkshdqn@gmail.com
     rss:             https://SangHunIm.github.io/feed.xml
 
 # Another author
