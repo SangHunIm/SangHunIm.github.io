@@ -8,7 +8,8 @@ SangHunIm:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Deep Learning / Natural Language Processing
+    임상훈(SangHun-Im) / Koreatech Graduate School - Master Course
+    DICE(Deep Inteligence for Cognitive Environments) Lab 소속 
 
   # This photo will be used in the about section
   picture:
