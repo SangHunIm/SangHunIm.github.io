@@ -2,7 +2,7 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               Test
+title:               ITTMTR
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
@@ -13,12 +13,12 @@ url:                 https://SangHunIm.github.io
 baseurl:             ""
 
 # A very short description of your page
-tagline:             Machine Learning Engineer
+tagline:             I'm Teaching This Machine To Read
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  메모가 습관인 데이터쟁이입니다
+  test
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
