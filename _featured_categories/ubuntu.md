@@ -1,10 +1,10 @@
 ---
 layout: list
-title: MLOps
-slug: mlops
+title: Ubuntu
+slug: ubuntu
 menu: true
 submenu: true
-order: 3
+order: 4
 description: >
-  ML + DevOps = MLOps
+  Server management
 ---

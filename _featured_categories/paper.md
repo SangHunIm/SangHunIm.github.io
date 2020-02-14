@@ -1,10 +1,10 @@
 ---
 layout: list
-title: etc
-slug: etc
+title: Paper
+slug: paper
 menu: true
 submenu: true
-order: 5
+order: 3
 description: >
-  기타
+  Paper 관련 포스트
 ---
