@@ -5,4 +5,6 @@ slug: text classification
 category: nlp
 menu: false
 order: 1
+description: >
+  Text cls
 ---
