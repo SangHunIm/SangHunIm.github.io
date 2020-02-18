@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
 title: NLP
-slug: NLP
+slug: nlp
 category: paper
 menu: false
 order: 4
