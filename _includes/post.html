@@ -22,28 +22,6 @@
     {% endunless %}
   {% endfor %}
 
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  {% unless include.excerpt %}
-    <div class="markdown-body">
-
-{% if post.header-img %}<div class="head-image"><img src="{{ site.url }}/{% if post.header-img %}assets/{{ post.header-img }}{% endif %}"/></div>
-<br/>{% elsif tag.header-img %}
-<div class="head-image"><img src="{{ site.url }}/assets/{{ tag.header-img }}"/></div>
-<br/>{% endif %}
-<style>
-.myAd1190 { display:block; width:98%; height: 280px; }
-@media(min-width: 600px) { .myAd1190 { display: none; } }
-</style>
-<ins class="adsbygoogle myAd1190"
-    data-ad-client="ca-pub-5105555504153863"
-    data-ad-slot="6481487416"
-    ></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-
 <br/>
       {{ post.content }}
       <br/>
