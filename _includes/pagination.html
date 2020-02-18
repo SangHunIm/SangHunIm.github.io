@@ -5,14 +5,14 @@
       {% if paginator.next_page %}
         <a rel="next" href="{{ paginator.next_page_path | relative_url }}">Older</a>
       {% else %}
-        <span>Older</span>
+        <span> </span>
       {% endif %}
     </li>
     <li class="pagination-item newer" >
       {% if paginator.previous_page %}
         <a rel="prev" href="{{ paginator.previous_page_path | relative_url }}">Newer</a>
       {% else %}
-        <span>Newer</span>
+        <span> </span>
       {% endif %}
     </li>
   </ul>
