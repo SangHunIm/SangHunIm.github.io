@@ -15,18 +15,18 @@ comments: true
 ## Ubuntu 18.04 설치
 새로 서버가 들어와 관리 편의성 및 nccl을 통한 분산 컴퓨팅을 위해 재설치 하며 남긴 기록입니다.
 
-#### HW spec
-- AMD treadreaper
-- Titan RTX * 4
+> #### HW spec
+>> - AMD treadreaper
+>> - Titan RTX * 4
 
-#### 설치할 소프트웨어
-- Ubuntu 18.04 desktop
-- ssh
-- ftp
-- nvidia driver
-- cuda
-- cudnn
-- nccl
+> #### 설치할 소프트웨어
+>> - Ubuntu 18.04 desktop
+>> - ssh
+>> - ftp
+>> - nvidia driver
+>> - cuda
+>> - cudnn
+>> - nccl
 
 ---
 
