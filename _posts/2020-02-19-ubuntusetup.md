@@ -7,13 +7,13 @@ tags: ubuntu
 comments: true
 ---
 
-- ubuntu 18.04 설치 및 DL을 위한 기본 프로그램 설치에 대한 글입니다.
+- ubuntu 18.04 설치 및 DL(w. pytorch)을 위한 기본 프로그램 설치에 대한 글입니다.
 
 ---
 
 
 ## ubuntu 18.04 설치
-새로 서버가 들어와 관리 편의성 및 nccl을 통한 분산 컴퓨팅을 위해 재설치 하며 남긴 기록입니다.
+새로 서버가 들어와 관리 편의성 및 pytorch 사용을 위해 재설치 하며 남긴 기록입니다.
 
 #### HW spec
 - AMD treadreaper
@@ -24,9 +24,6 @@ comments: true
 - ssh
 - ftp
 - nvidia driver
-- cuda
-- cudnn
-- nccl
 
 ---
 
@@ -138,7 +135,7 @@ sudo systemctl restart vsftpd
 
 ### GPU Setup
 
-현재 pytorch(1.4.0)은 자체적인 cuda lib을 사용하므로 nvidia driver만 설치하면 됩니다.
+현재 pytorch(1.4.0)은 자체적인 cuda/nccl/cudnn lib을 사용하므로 nvidia driver만 설치하면 됩니다.
 
 따라서 최신버전의 nvidia driver을 설치합니다.
 
@@ -156,56 +153,6 @@ sudo reboot
 ```{.bash}
 nvidia-smi
 ```
-
-#### CUDA
-
-현재 최신버전 nvidia driver 440 버전은 cuda 10.2를 지원합니다.
-
-nvidia 공식홈페이지 cuda 10.2 설치법을 참고하여 작성하였습니다.
-
-```{.bash}
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
-sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
-sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
-sudo add-apt-repository "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/ /"
-sudo apt-get update
-sudo apt-get -y install cuda
-```
-
-#### cuDNN
-
-cuDNN 공식 홈페이지 가입 후 해당 버전에 맞는 cuDNN 다운로드 후 다음 코드 실행
-
-```{.bash}
-sudo tar -zxvf [cudnn파일]
-sudo cp cuda/include/cudnn.h /usr/local/cuda-10.2/include
-sudo cp cuda/lib64/libcudnn* /usr/local/cuda-10.2/lib64
-sudo chmod a+r /usr/local/cuda-10.2/include/cudnn.h /usr/local/cuda-10.2/lib64/libcudnn*
-sudo apt-get install libcupti-dev
-```
-
-설치 이후 환경변수를 추가해줘야 합니다.
-
-```{.bash}
-nano ~/.bashrc
-```
-
-하단에 다음 라인 추가
-
-```{.bash}
-export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-```
-
-설치 확인법
-
-```{.bash}
-cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
-```
-
-#### nccl
-
-- 추후 추가 예정
 
 ---
 
