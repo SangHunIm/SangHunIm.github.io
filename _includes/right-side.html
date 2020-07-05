@@ -1,23 +1,7 @@
-<aside class="sidebar__right">
+<aside class="right-side">
     <nav class="toc" markdown="1">
     <header><h4 class="nav__title"><i class="fas fa-{{ include.icon | default: 'file-alt' }}"></i> {{ include.title | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
-    *  Auto generated table of contents
     {:toc .toc__menu}
     {% include toc.html html=content %}
     </nav>
 </aside>
-
-<div class="right-side">
-    <div class="ad-first">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- 블로그-상단-모바일 -->
-      <ins class="adsbygoogle"
-           style="display:inline-block;width:100%;"
-           data-ad-client="ca-pub-5105555504153863"
-           data-ad-slot="9090558636"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-  <br/>
