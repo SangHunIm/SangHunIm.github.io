@@ -1,6 +1,6 @@
 ---
 layout: tag-blog
-title: Deep Unsupervied Learning
+title: Deep Unsupervised Learning
 slug: dul
 category: lecture
 menu: false
