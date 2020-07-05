@@ -1,8 +1,11 @@
 ---
 layout: tag-blog
-title: CS109
-slug: cs109
+title: Probability for Computer Scientists
+slug: prob
 category: lecture
 menu: false
-order: 4
+order: 3
+description: >
+  Stanford CS109-2019 "Probability for Computer Scientists" lecture note
+
 ---
