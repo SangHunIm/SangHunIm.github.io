@@ -7,4 +7,6 @@ tags: dul
 comments: true
 ---
 
+UCB CS294 Lecture 01 - Logistics and Motivation 정리
+
 # 목차
