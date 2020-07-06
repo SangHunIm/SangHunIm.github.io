@@ -175,8 +175,7 @@ a.sidebar-nav-subitem {
     position: absolute;
     top: 0;
     right: 0;
-    width: $right-sidebar-width-narrow;
-    margin-right: -1 * $right-sidebar-width-narrow;
+    width: 100%;
     padding-left: 1em;
     z-index: 10;
 
@@ -190,7 +189,6 @@ a.sidebar-nav-subitem {
   }
 
   @include breakpoint($x-large) {
-    width: $right-sidebar-width;
-    margin-right: -1 * $right-sidebar-width;
+    width: 100%;
   }
 }
